@@ -59,6 +59,8 @@ class ServerConnection:
         self.send(REQUEST_CONNECT)
         print("Connected to", self.ip, PORT)
         response = self.socket.recv(1024).decode()
+	response_handler = self
+	
         if response == RESPONSE_CONNECT_APPROVED:
             self.connected = True
             print("Connection approved")
