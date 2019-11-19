@@ -63,3 +63,21 @@ SQL_GET_GENRE_ID = "SELECT id FROM genres WHERE title=?"
 SQL_ADD_BOOK = "INSERT INTO books (title, text, genres, author) VALUES (?, ?, ?, ?)"
 SQL_GET_BOOKS = "SELECT * FROM books WHERE %s LIKE ?"
 SQL_GET_CONTENT = "SELECT text FROM books WHERE id=?"
+
+BANNER = '''
+ Welcome to SnakeEyes!
+by ArturLukianov
+
+/---\\
+| 0 |
+\\___/
+
+Please, use API or join SnakeEyes community to develop server UI
+
+* No multithreading
+* No connection encryption
+* Client only reading channel enabled
+
+
+Enjoy new information!
+'''
